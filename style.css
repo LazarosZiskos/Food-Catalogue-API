@@ -159,8 +159,17 @@ a {
 
 .card__wrapper {
     display: flex;
-    margin-top: 80px;
     width: 100%;
+}
+
+
+.most-popular {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 
