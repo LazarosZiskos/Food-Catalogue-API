@@ -10,7 +10,6 @@ async function main() {
   );
   const data = await response.json();
   const recipes = data.hits;
-  console.log(recipes)
   cardListEl.innerHTML = recipes.map((recipe) => recipeHTML(recipe)).join("");
 }
 
