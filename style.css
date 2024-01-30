@@ -33,6 +33,11 @@ a {
     align-items: center;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 .text-orange {
     color: rgb(218, 134, 44);
 }
@@ -235,4 +240,80 @@ img {
     padding: 8px 0;
     font-size: 15px;
     text-transform: capitalize;
+}
+
+
+@media (max-width:550px) {
+    .header__links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .card__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .input__wrapper {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .input {
+        margin-right: 0;
+        width: 350px;
+    }
+
+    .input__button {
+        padding: 0;
+        width: 350px;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .header__links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .card__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .input__wrapper {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .input {
+        margin-right: 0;
+        width: 450px;
+    }
+
+    .input__button {
+        padding: 0;
+        width: 440px;
+        margin-top: 20px;
+    }
 }
