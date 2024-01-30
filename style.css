@@ -12,6 +12,11 @@ a {
     color: black;
     font-size: 18px;
     font-weight: 700;
+    transition: all 300ms ease;
+}
+
+.nav__link:hover {
+    color: rgb(218, 134, 44) ;
 }
 
 .row {
@@ -22,14 +27,18 @@ a {
 }
 
 .navbar {
-    padding: 50px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.text-orange {
+    color: rgb(218, 134, 44);
+}
+
 .logo {
-    color: rgb(218, 134, 44);;
+    color: rgb(218, 134, 44);
 }
 
 .header__links {
@@ -45,12 +54,18 @@ a {
     align-items: center;
     background-color: rgb(218, 134, 44);
     color: #fff;
-    border: 2px solid rgb(218, 134, 44);
+    border: none;
     border-radius: 50px;
     padding: 12px 40px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+.button:hover {
+    background-color: rgb(139, 87, 31);
+    scale: 1.05;
 }
 
 .wrapper {
@@ -66,6 +81,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.restaurant_icon {
+    position: absolute;
+    right: 75%;
+    
 }
 
 
@@ -96,6 +118,14 @@ a {
     max-width: 430px;
     font-size: 20px;
     padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease;
+}
+
+.input:focus {
+    border: 2px solid #242424;
 }
 
 .input__button {
@@ -103,7 +133,7 @@ a {
     height: 60px;
     background-color: rgb(218, 134, 44);
     color: #fff;
-    border: 2px solid rgb(218, 134, 44);
+    border: none;
     border-radius: 50px;
     padding: 12px 40px;
     font-weight: 700;
@@ -111,4 +141,82 @@ a {
     text-transform: uppercase;
     font-size: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.input__button:hover {
+    background-color: rgb(139, 87, 31);
+    scale: 1.05;
+}
+
+.material-symbols-outlined {
+    padding-right: 10px;
+}
+
+
+.card__wrapper {
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+}
+
+
+.card {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #242424;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-right: 10px;
+    transition: all 300ms ease;
+    position: relative;
+}
+
+.card a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+.card:hover {
+    scale: 1.05;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    
+}
+
+.card__details--title {
+    padding: 16px 0;
+}
+
+.card__details--stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.card__details--para {
+    padding: 8px 0;
 }
