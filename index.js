@@ -2,6 +2,17 @@ const APP_ID = "e2c1665c";
 const APP_KEY = "84b7cf96ee4f65e1c0f08490f181851d";
 
 // data.hits[0].recipe.label --> Recipe title
+
+
+function openMenu() {
+  document.body.classList += " menu--open"
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu--open')
+}
+
+let recipe;
 const cardListEl = document.querySelector(".card__wrapper");
 
 async function main() {
@@ -12,9 +23,6 @@ async function main() {
   const recipes = data.hits;
   cardListEl.innerHTML = recipes.map((recipe) => recipeHTML(recipe)).join("");
 }
-
-
-
 
 function recipeHTML(recipe) {
   return `<div class="card">
@@ -40,8 +48,11 @@ function recipeHTML(recipe) {
         )} target=_blank class="button margin-bottom" >View Full Recipe</a>
         </div>
         </div>
-        `;
+        `
 }
+
+
+
 
 async function onChangeSearch(event) {
   searchParam = event.target.value;
@@ -54,5 +65,7 @@ async function onChangeSearch(event) {
   const recipes = data.hits;
   cardListEl.innerHTML = recipes.map((recipe) => recipeHTML(recipe)).join("");
 
-  `<h1>no results</h1>`;
 }
+
+
+

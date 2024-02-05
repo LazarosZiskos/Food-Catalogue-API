@@ -167,6 +167,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 
@@ -317,3 +318,36 @@ img {
         margin-top: 20px;
     }
 }
+
+.recipes__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+  }
+
+
+.recipes__loading--spinner {
+    display: none;
+    color: white;
+}
+
+.recipes__loading .recipes__loading--spinner {
+    display: block;
+    color: rgb(218, 134, 44);
+}
+
+.fa-spinner {
+    animation: rotate 600ms infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
