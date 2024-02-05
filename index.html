@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -25,10 +26,10 @@
             </div>
             <div class="header__links">
               <a href="/" class="nav__link">Home</a>
-              <a href="/" class="nav__link">Find a Recipe</a>
+              <a href="/recipes.html" class="nav__link">Find a Recipe</a>
               <a href="/" class="button">Login</a>
             </div>
-            <a href="/" class="hamburger"><span class="material-symbols-outlined ">
+            <a href="/" class="hamburger" onclick="openMenu()"><span class="material-symbols-outlined ">
               menu
               </span>
             </a>
@@ -60,8 +61,11 @@
       </div>
       <div class="row">
         <h1 class="most-popular">
-          <span class="text-orange">Most</span> Searched
+          <span class="text-orange">Most</span> Popular Results
         </h1>
+        <div class="spinner__wrapper">
+          <i class="fas fa-spinner recipes__loading--spinner"></i>
+        </div>
         <div class="card__wrapper">
           <div class="card">
             <img src="assets/napolitana.jpg" alt="food-image" />
@@ -145,6 +149,7 @@
             </div>
           </div>
         </div>
+       
       </div>
     </section>
   </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="recipes.js" defer></script>
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+      </head>
+<body>
+    <header>
+        <section>
+          <div class="row">
+            <div class="navbar">
+              <div class="logo">
+                <h1>Food Catalogue.</h1>
+              </div>
+              <div class="header__links">
+                <a href="/" class="nav__link">Home</a>
+                <a href="/" class="nav__link">Find a Recipe</a>
+                <a href="/" class="button">Login</a>
+              </div>
+              <a href="/" class="hamburger" onclick="openMenu()"><span class="material-symbols-outlined ">
+                menu
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section>
+        <div class="row">
+            <div class="wrapper">
+              <h1 class="title">Are you Hungry?</h1>
+              <h3 class="subtitle">
+                Find <span class="text-orange">ANY</span> recipe you want in SECONDS
+                <br />with <span class="text-orange">Food Catalogue.</span>
+              </h3>
+            </div>
+            <div class="input__wrapper">
+              <input
+                type="text"
+                placeholder="Search your recipe..."
+                class="input"
+                onchange="onChangeSearch()"
+              />
+              <button class="input__button">
+                <span class="material-symbols-outlined"> Search </span>Search
+              </button>
+            </div>
+          </div>
+      </section>
+    
+</body>
+</html>
