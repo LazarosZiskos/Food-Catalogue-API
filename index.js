@@ -3,13 +3,12 @@ const APP_KEY = "84b7cf96ee4f65e1c0f08490f181851d";
 
 // data.hits[0].recipe.label --> Recipe title
 
-
 function openMenu() {
-  document.body.classList += " menu--open"
+  document.body.classList += " menu--open";
 }
 
 function closeMenu() {
-  document.body.classList.remove('menu--open')
+  document.body.classList.remove("menu--open");
 }
 
 let recipe;
@@ -48,11 +47,8 @@ function recipeHTML(recipe) {
         )} target=_blank class="button margin-bottom" >View Full Recipe</a>
         </div>
         </div>
-        `
+        `;
 }
-
-
-
 
 async function onChangeSearch(event) {
   searchParam = event.target.value;
@@ -64,8 +60,4 @@ async function onChangeSearch(event) {
 
   const recipes = data.hits;
   cardListEl.innerHTML = recipes.map((recipe) => recipeHTML(recipe)).join("");
-
 }
-
-
-

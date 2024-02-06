@@ -6,7 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -29,10 +32,25 @@
               <a href="/recipes.html" class="nav__link">Find a Recipe</a>
               <a href="/" class="button">Login</a>
             </div>
-            <a href="/" class="hamburger" onclick="openMenu()"><span class="material-symbols-outlined ">
-              menu
-              </span>
-            </a>
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a class="menu__link" href="/">Home</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" href="/recipes.html">Find a Recipe</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" href="/">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -50,7 +68,7 @@
         <div class="input__wrapper">
           <input
             type="text"
-            placeholder="Search your recipe..."
+            placeholder="e.g. chicken"
             class="input"
             onchange="onChangeSearch(event)"
           />
@@ -61,7 +79,7 @@
       </div>
       <div class="row">
         <h1 class="most-popular">
-          <span class="text-orange">Most</span> Popular Results
+          <span class="text-orange">Most</span> Popular Recipes
         </h1>
         <div class="spinner__wrapper">
           <i class="fas fa-spinner recipes__loading--spinner"></i>
@@ -108,9 +126,7 @@
               <p class="card__details--para">
                 <i>Dish Type</i> : <b></b>Sandwiches
               </p>
-              <p class="card__details--para">
-                <i>Calories</i> : <b></b>832.53
-              </p>
+              <p class="card__details--para"><i>Calories</i> : <b></b>832.53</p>
             </div>
             <div class="card__details--link">
               <a
@@ -124,9 +140,7 @@
           <div class="card">
             <img src="assets/tzatziki.jpg" alt="food-image" />
             <div class="card__details">
-              <h2 class="card__details--title text-orange">
-                Tzatziki
-              </h2>
+              <h2 class="card__details--title text-orange">Tzatziki</h2>
             </div>
             <div>
               <p class="card__details--para">
@@ -135,9 +149,7 @@
               <p class="card__details--para">
                 <i>Dish Type</i> : <b></b>Condimets and sauces
               </p>
-              <p class="card__details--para">
-                <i>Calories</i> : <b></b>469.18
-              </p>
+              <p class="card__details--para"><i>Calories</i> : <b></b>469.18</p>
             </div>
             <div class="card__details--link">
               <a
@@ -149,7 +161,6 @@
             </div>
           </div>
         </div>
-       
       </div>
     </section>
   </body>
